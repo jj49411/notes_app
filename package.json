@@ -17,6 +17,8 @@
   "homepage": "https://github.com/jj49411/notes_app#readme",
   "description": "",
   "dependencies": {
-    "validator": "^12.2.0"
+    "chalk": "^3.0.0",
+    "validator": "^12.2.0",
+    "yargs": "^15.3.0"
   }
 }
