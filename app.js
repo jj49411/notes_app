@@ -2,11 +2,6 @@ const chalk = require('chalk');
 const yargs = require('yargs')
 
 const notes = require('./notes')
-// const print = getNotes()
-
-console.log(chalk.blue.bold('Success!'))
-// console.log(process.argv)
-
 
 //add, remove, read, list
  
@@ -26,7 +21,7 @@ yargs.command({
       type: 'string'
     }
   },
-  handler: function(argv) {
+  handler(argv) {
     notes.addNote(argv.title, argv.body)
   }
 })
@@ -41,7 +36,7 @@ yargs.command({
       type: 'string'
     }
   },
-  handler: function(argv) {
+  handler(argv) {
     notes.removeNote(argv.title)
   }
 })
@@ -50,7 +45,7 @@ yargs.command({
 yargs.command({
   command: 'read',
   description: 'Read a note',
-  handler: function() {
+  handler() {
     console.log('read!')
   }
 })
@@ -59,7 +54,7 @@ yargs.command({
 yargs.command({
   command: 'list',
   description: 'List the note',
-  handler: function() {
+  handler() {
     console.log('listed!')
   }
 })
