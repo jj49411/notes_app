@@ -13,7 +13,7 @@ const addNote = (title, body) => {
     saveNotes(notes)
     console.log(chalk.green.bold('New note added!'))
   }else {
-    console.log(duplicateNotes)
+    console.log(duplicateNote)
     console.log(chalk.red.bold('Title already exist!'))
   }
 }
